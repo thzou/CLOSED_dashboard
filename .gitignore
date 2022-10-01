@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Poetry
-.poetry.lock
+poetry.lock
