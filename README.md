@@ -34,7 +34,7 @@ poetry install
 
 ## Usage
 
-If you want to use the dashboard as it is please use the below folder taxonomy of your 3D point clouds files. Then simply run ```poetry run python dashboard.py``` inside the project directory.
+If you want to use the dashboard as it is please use the below folder taxonomy for your 3D point clouds files. Then simply run ```poetry run python dashboard.py``` inside the project directory.
 <p>
 	<img width="1080" alt="Design" src="img/folder_taxonomy.png"/>
 </p>
