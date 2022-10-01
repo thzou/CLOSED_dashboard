@@ -1,5 +1,4 @@
 import os
-
 import dash
 import dash_table
 import dash_core_components as dcc
@@ -7,16 +6,14 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
-
 import pandas as pd
 import numpy as np
 import json
-
 from plyfile import PlyData
 from sklearn import preprocessing
 
-DIR = "/home/thzou/Projects/torch-points3d"
-benchmark_dir = os.path.join(DIR, 'outputs/benchmark/')
+DIR = "/"
+benchmark_dir = os.path.join(DIR, 'benchmark/')
 print(benchmark_dir)
 
 def normalize(df):
@@ -243,10 +240,10 @@ app.layout = html.Div([
                 html.H3("Parameters"),
                 html.P('Alpha:'),
                 html.Div(id='alpha-slider-value'),
-                dcc.Slider(id='alpha-slider', min=0, max=1, step=0.01, value=0.5),
+                dcc.Slider(id='alpha-slider', min=0, max=1, step=0.01, value=0.5,  marks=None, tooltip={"placement": "bottom", "always_visible": True}),
                 html.P('Beta:'),
                 html.Div(id='beta-slider-value'),
-                dcc.Slider(id='beta-slider', min=0, max=1, step=0.01, value=0.5),
+                dcc.Slider(id='beta-slider', min=0, max=1, step=0.01, value=0.5,  marks=None, tooltip={"placement": "bottom", "always_visible": True}),
                 html.P("Select Models:"),
                 dcc.Dropdown(id='selected-models-comparison',
                              options=[
@@ -330,7 +327,7 @@ app.layout = html.Div([
                         options=[
                             {'label': exp.root_folder.split('-')[-2], 'value': exp.root_folder} for exp in exps
                         ],
-                        value=exps[0].root_folder
+                        value=exps[1].root_folder
                     )
                 ], className="six columns"),
                 html.Div([
@@ -357,7 +354,7 @@ app.layout = html.Div([
                     html.Br(),
                     dcc.Dropdown(id='set-dropdown'),
                     html.Br(),
-                    dcc.Slider(id='epoch-slider'),
+                    dcc.Slider(id='epoch-slider', marks=None, tooltip={"placement": "bottom", "always_visible": True}),
                     html.P(id='epoch-label'),
                     dcc.Dropdown(id='sample-dropdown'),
                     html.H3('Metric'),
@@ -391,6 +388,7 @@ app.layout = html.Div([
     ])
 ])
 
+# DASHBOARD TABS #
 
 ###############
 #   General   #

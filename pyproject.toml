@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "closed_dashboard"
+version = "0.1.0"
+description = "A dashboard visualization tool for 3D point cloud segmentation analysis"
+authors = ["Thanasis Zoumpekas (thzou)"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dash = "^2.6.2"
+plotly = "^5.10.0"
+pandas = "^1.5.0"
+numpy = "^1.23.3"
+plyfile = "^0.7.4"
+sklearn = "^0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
