@@ -4,7 +4,7 @@
 	<img width="1080" alt="Design" src="img/design.png"/>
 </p>
 
-[CLOSED: A Dashboard for 3D Point Cloud Segmentation Analysis using Deep Learning](https://www.scitepress.org/Papers/2022/108260/108260.pdf)
+This repository provides the code for our VISAPP 2022 paper [CLOSED: A Dashboard for 3D Point Cloud Segmentation Analysis using Deep Learning](https://www.scitepress.org/Papers/2022/108260/108260.pdf)
 
 Please consider citing this work if you find it influential or useful in your research.
 
