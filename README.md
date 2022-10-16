@@ -32,6 +32,10 @@ Then simply run (inside the project directory):
 poetry install
 ```
 
+## Demo
+
+YouTube video: https://www.youtube.com/watch?v=bCDWw4VYSZA
+
 ## Usage
 
 If you want to use the dashboard as it is please use the below folder taxonomy for your 3D point clouds files. Then simply run ```poetry run python dashboard.py``` inside the project directory.
