@@ -23,6 +23,11 @@ Please consider citing this work if you find it influential or useful in your re
 }
 ```
 
+## Demo
+
+YouTube video: https://www.youtube.com/watch?v=bCDWw4VYSZA
+
+
 ## Installation
 
 Please install [Python Poetry](https://python-poetry.org/).
@@ -32,9 +37,6 @@ Then simply run (inside the project directory):
 poetry install
 ```
 
-## Demo
-
-YouTube video: https://www.youtube.com/watch?v=bCDWw4VYSZA
 
 ## Usage
 
